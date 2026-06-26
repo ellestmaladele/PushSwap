@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: addufour <addufour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/17 00:00:00 by lchehbi           #+#    #+#             */
-/*   Updated: 2026/06/24 17:21:50 by marvin           ###   ########.fr       */
+/*   Updated: 2026/06/26 09:03:43 by addufour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ static int	parse_flags(int argc, char **argv, t_config *cfg)
 		i++;
 	return (i);
 }
+
 static void	run_bench_mode(t_stack **a, t_stack **b, t_config *cfg)
 {
 	t_bench	bench;

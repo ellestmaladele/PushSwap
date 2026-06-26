@@ -33,7 +33,7 @@ void	pb(t_node **a, t_node **b)
 	if (!node)
 		return ;
 	push_front(b, node);
-	if(g_bench)
+	if (g_bench)
 		bench_count(g_bench, OP_PB);
 	print_op("pb\n");
 }

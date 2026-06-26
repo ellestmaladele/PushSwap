@@ -101,3 +101,25 @@ void	sort_medium(t_stacks *stacks)
 	push_chunks_to_b(stacks, chunk_size);
 	restore_b_to_a(stacks);
 }
+
+int	find_max_position(t_node *stack)
+{
+	int	position;
+	int	max_index;
+	int	i;
+
+	position = 0;
+	i = 0;
+	max_index = stack->index;
+	while (stack)
+	{
+		if (stack->index > max_index)
+		{
+			max_index = stack->index;
+			position = i;
+		}
+		stack = stack->next;
+		i++;
+	}
+	return (position);
+}
